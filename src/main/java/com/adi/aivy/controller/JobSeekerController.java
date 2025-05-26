@@ -43,7 +43,7 @@ public class JobSeekerController {
 		file.transferTo(temp);
 
 		String extractedText = ocrService.extractText(temp);
-		
+
 		JobSeeker jobseeker = jobseekerRepository.findByQualificationsAndExtractedCv(qualifications, extractedText);
 		String suggestionLearningPath = "";
 		if (jobseeker != null) {

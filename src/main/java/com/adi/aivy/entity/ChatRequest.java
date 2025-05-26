@@ -6,7 +6,6 @@ public class ChatRequest {
 	private String model;
 	private List<ChatMessage> messages;
 
-
 	public ChatRequest() {
 	}
 

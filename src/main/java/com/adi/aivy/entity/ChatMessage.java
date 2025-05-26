@@ -1,7 +1,7 @@
 package com.adi.aivy.entity;
 
 public class ChatMessage {
-	private String role; // "user" or "system"
+	private String role;
 	private String content;
 
 	public ChatMessage() {
