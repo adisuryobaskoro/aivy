@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: aivy
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/aivy
+      
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+      
+tesseract:
+  datapath: 'C:/Program Files/Tesseract-OCR/tessdata'
+  
+ai:
+  api-key: ${OPEN_ROUTER_API_KEY}
+  url: https://openrouter.ai/api/v1/chat/completions
+  model: mistralai/mistral-7b-instruct
